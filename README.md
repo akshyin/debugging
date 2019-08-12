@@ -46,22 +46,22 @@ java -version
 
 ## Opening the port 8080 and 8443 in centos 7
 
-https://www.thegeekdiary.com/how-to-open-a-ports-in-centos-rhel-7/  
+https://www.thegeekdiary.com/how-to-open-a-ports-in-centos-rhel-7/    
+netstat -na |grep 8443    
+lsof -i -P |grep http  
+lsof -i -P |grep https  
+iptables-save | grep 8443  
+iptables-save | grep 8080  
+vi /etc/services  
+firewall-cmd --zone=public --add-port=8080/tcp --permanent  
+firewall-cmd --zone=public --add-port=8443/tcp --permanent  
+firewall-cmd --reload  
+iptables-save | grep 8443  
+iptables-save | grep 8080  
+Try to connect to the service    
+lsof -i -P |grep http  
+lsof -i -P |grep https  
 netstat -na |grep 8443  
-lsof -i -P |grep http
-lsof -i -P |grep https
-iptables-save | grep 8443
-iptables-save | grep 8080
-vi /etc/services
-firewall-cmd --zone=public --add-port=8080/tcp --permanent
-firewall-cmd --zone=public --add-port=8443/tcp --permanent
-firewall-cmd --reload
-iptables-save | grep 8443
-iptables-save | grep 8080
-Try to connect to the service  
-lsof -i -P |grep http
-lsof -i -P |grep https
-netstat -na |grep 8443
-netstat -na |grep 8080
+netstat -na |grep 8080  
 
 
