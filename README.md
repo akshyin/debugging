@@ -29,3 +29,18 @@ caution: 1. use password less than 8 character. move file at server from /root/.
 ## How to new line in md file
 write (space,space)  
 write  
+
+## Installing java 7 on centos 7
+REf: https://tecadmin.net/steps-to-install-java-on-centos-5-6-or-rhel-5-6/  
+wget  "https://download.java.net/openjdk/jdk7u75/ri/openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz"  
+tar xzf openjdk-7u75-b13-linux-x64-18_dec_2014.tar.gz   
+cd /opt/java-se-7u75-ri/  
+alternatives --install /usr/bin/java java /opt/java-se-7u75-ri/bin/java 2  
+alternatives --config java  
+alternatives --install /usr/bin/jar jar /opt/java-se-7u75-ri/bin/jar 2  
+lternatives --install /usr/bin/javac javac /opt/java-se-7u75-ri/bin/javac 2  
+alternatives --install /usr/bin/javac javac /opt/java-se-7u75-ri/bin/javac 2  
+alternatives --set jar /opt/java-se-7u75-ri/bin/jar  
+alternatives --set javac /opt/java-se-7u75-ri/bin/javac  
+java -version  
+
