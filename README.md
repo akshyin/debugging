@@ -14,4 +14,14 @@ Steps:
  /usr/pgsql-10/bin/postgresql-10-setup initdb
  systemctl start postgresql-10.service 
  systemctl enable postgresql-10.service 
+ 
+ ## How to use remote desktop on CentOS 7
+at centos 
+yum -y install epel-release
+yum -y install x11vnc
+x11vnc -storepasswd
+x11vnc --reopen --forever -rfbauth ~/.vncpasswd &
+at ubuntu for vnc
+install vinagre
 
+caution: 1. use password less than 8 character. move file at server from /root/.vnc/passwd to /root/.vncpasswd
