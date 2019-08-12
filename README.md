@@ -7,13 +7,13 @@ https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7.6-x86_64/
 Steps:
  rpm -q centos-release \s
  wget https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7.6-x86_64/pgdg-centos10-10-2.noarch.rpm
- yum install pgdg-centos10-10-2.noarch.rpm 
- yum install pgdg-centos10-10-2.noarch.rpm epel-release.noarch 
- yum update
- yum install postgresql10-server.x86_64 postgresql10-contrib.x86_64 
- /usr/pgsql-10/bin/postgresql-10-setup initdb
- systemctl start postgresql-10.service 
- systemctl enable postgresql-10.service 
+ yum install pgdg-centos10-10-2.noarch.rpm  
+ yum install pgdg-centos10-10-2.noarch.rpm epel-release.noarch  
+ yum update 
+ yum install postgresql10-server.x86_64 postgresql10-contrib.x86_64   
+ /usr/pgsql-10/bin/postgresql-10-setup initdb 
+ systemctl start postgresql-10.service  
+ systemctl enable postgresql-10.service  
  
  ## How to use remote desktop on CentOS 7
 at centos 
