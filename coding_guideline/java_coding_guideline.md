@@ -1,3 +1,4 @@
-java coding style should be complied with the document
-https://www.oracle.com/technetwork/java/codeconventions-150003.pdf
-It is downloaded in same directory
+# java coding guidelines
+The document refered here is appropriate for coding guideline for java.
+[link to document!](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
+A local copy is made available in same directory.
