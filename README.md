@@ -62,6 +62,26 @@ Try to connect to the service
 lsof -i -P |grep http  
 lsof -i -P |grep https  
 netstat -na |grep 8443  
-netstat -na |grep 8080  
+netstat -na |grep 8080 
+
+## How to install maven on centos
+
+https://linuxize.com/post/how-to-install-apache-maven-on-centos-7/  
+
+java should be installed and java home to be known
+wget http://apachemirror.wuchna.com/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz -P /tmp 
+tar xf /tmp/apache-maven-3.6.1-bin.tar.gz -C /opt  
+ls /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-2.el7_6.x86_64  
+tar xf /tmp/apache-maven-3.6.1-bin.tar.gz -C /opt  
+ln -s /opt/apache-maven-3.6.1 /opt/maven  
+echo $JAVA_HOME  
+java -version  
+which java  
+ls -l /usr/bin/java  
+ls -l /etc/alternatives/java  
+vi /etc/profile.d/maven.sh  
+chmod +x /etc/profile.d/maven.sh  
+source /etc/profile.d/maven.sh  
+
 
 
