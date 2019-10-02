@@ -83,5 +83,17 @@ vi /etc/profile.d/maven.sh
 chmod +x /etc/profile.d/maven.sh  
 source /etc/profile.d/maven.sh  
 
+## How to enable wifi in dell laptop of latitude 3400
+990  cd /lib/firmware/ath10k/QCA9377/hw1.0/  
+  991  ls  
+  992  cat notice_ath10k_firmware-6.txt   
+  993   ls  
+  994  clear  
+  995    
+  996  rm -rf firmware-6.bin  
+  997  sudo rm -rf firmware-6.bin   
+  998  sudo rm notice_ath10k_firmware-6.txt  
+  999  ls  
+ 1000  reboot  
 
 
