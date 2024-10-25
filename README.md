@@ -1,4 +1,8 @@
 # debugging
+## How to install Indic TTS on machine without training 
+
+https://github.com/AI4Bharat/Indic-TTS
+
 ## How to uninstall java from linux
 https://novicestuffs.wordpress.com/2017/04/25/how-to-uninstall-java-from-linux/
 ## How to Install PostgreSQL Relational Databases on CentOS 7
